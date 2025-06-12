@@ -1,4 +1,5 @@
-let word = "Bear"
+const letters = ["B", "e", "a", "r"];
+let word = letters.join("");
 function stringToArray(str) {
     return str.split("")
 }

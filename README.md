@@ -1,2 +1,2 @@
 # bear
- variações da palavra 'bear'
+variações da palavra 'Bear'

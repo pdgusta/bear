@@ -13,7 +13,7 @@ function variar(str){
         [arr[i], arr[j]] = [arr[j], arr[i]]
     }
 
-    return arr
+    return arr.join('')
 }
 
 class Bear extends React.Component {

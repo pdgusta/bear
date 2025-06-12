@@ -1,0 +1,11 @@
+{
+  "name": "bear",
+  "version": "1.0.0",
+  "description": "variacoes da palavra 'bear'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "author": "",
+  "license": "ISC"
+}

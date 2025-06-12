@@ -14,14 +14,26 @@ function variar(str){
 }
 
 class Bear extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { word: variar(word) };
+        this.randomizeWord = this.randomizeWord.bind(this);
+    }
+
+    randomizeWord() {
+        this.setState({ word: variar(word) });
+    }
+
     render() {
         return (
             <div id="corpo" className="center">
                 <div>
-                    <h1>{variar(word)}</h1>
+                    <h1>{this.state.word}</h1>
+                    <button onClick={this.randomizeWord}>Randomizar</button>
                 </div>
             </div>
         );
     }
 }
 ReactDOM.render(<Bear />, document.querySelector("#app"));
+

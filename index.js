@@ -1,10 +1,6 @@
 let word = "Bear"
 function stringToArray(str) {
-    let arr = []
-    for (let i = 0; i < str.length; i++){
-        arr.push(str[i])
-    }
-    return arr
+    return str.split("")
 }
 function variar(str){
     let arr = stringToArray(str)
@@ -13,7 +9,7 @@ function variar(str){
         [arr[i], arr[j]] = [arr[j], arr[i]]
     }
 
-    return arr
+    return arr.join("")
 }
 
 class Bear extends React.Component {
